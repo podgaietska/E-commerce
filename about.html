@@ -32,26 +32,27 @@
                 <ul class="nav-list d-flex">
                     <li class="nav-item"><a href="/" class="nav-link">HOME</a></li>
                     <li class="nav-item"><a href="shop.html" class="nav-link">SHOP</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link active">ABOUT</a></li>
                     <li class="nav-item"><a href="blog.html" class="nav-link">BLOG</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
                     <li class="icons d-flex">
                     <a href="login.html" class="icon"><i class="bx bx-user"></i></a>
-                    <a class="icon"><i class="bx bx-heart"></i>
+                    <a href="wishlist.html" class="icon"><i class="bx bx-heart"></i>
                     <span class="d-flex">0</span>
                     </a>
-                    <a href="cart.html" class="icon active"><i class="bx bx-cart"></i>
+                    <a href="cart.html" class="icon"><i class="bx bx-cart"></i>
                         <span class="d-flex">0</span>
                     </a>
                     </li>
                 </ul>
+
                 <!-- icons -->
                 <div class="icons d-flex">
                     <a href="login.html" class="icon"><i class="bx bx-user"></i></a>
                     <a href="wishlist.html" class="icon"><i class="bx bx-heart"></i>
                     <span class="d-flex">0</span>
                     </a>
-                    <a href="cart.html" class="icon active"><i class="bx bx-cart"></i>
+                    <a href="cart.html" class="icon"><i class="bx bx-cart"></i>
                         <span class="d-flex">0</span>
                     </a>
                 </div>
@@ -61,81 +62,18 @@
                 </div>
             </div>
         </div>
-    <!-- Page Header -->
-    <section class="page-header">
-        <h2>.shopping cart</h2>
+   
+    <!-- About -->
+    <section class="who">
+        
     </section>
-    <!-- Cart -->
-    <section class="container cart">
-        <table width="100%">
-            <thead>
-                <tr>
-                    <td>Image</td>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Subtotal</td>
-                    <td>Remove</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><img src="./images/product3.jpg" alt=""></td>
-                    <td>Represent Hoodie</td>
-                    <td>$99.00</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$99.00</td>
-                    <td><a href="#"><i class="bx bx-x"></i></a></td>
-                </tr>
-                <tr>
-                    <td><img src="./images/product6.jpg" alt=""></td>
-                    <td>Represent T-shirt</td>
-                    <td>$99.00</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$99.00</td>
-                    <td><a href="#"><i class="bx bx-x"></i></a></td>
-                </tr>
-                <tr>
-                    <td><img src="./images/product7.jpg" alt=""></td>
-                    <td>North Face Wool-Blend Down Jacket</td>
-                    <td>$99.00</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$99.00</td>
-                    <td><a href="#"><i class="bx bx-x"></i></a></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <section class="started">
 
-    <!-- Payment -->
-    <section class="cart-payment">
-        <div class="coupon">
-            <h3>Apply Coupon</h3>
-            <div>
-                <input type="text" placeholder="Enter Your Coupon">
-                <button class="coupon-btn">Apply</button>
-            </div>
-        </div>
-        <div class="subtotal">
-            <h3>Cart Total</h3>
-            <table>
-                <tr>
-                    <td>Cart Subtotal</td>
-                    <td>$1230</td>
-                </tr>
-                <tr>
-                    <td>Shipping Cost</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong>$1230</strong></td>
-                </tr>
-            </table>
-            <button class="checkout-btn">Proceed to checkout</button>
-        </div>
     </section>
+    <section class="our-mission">
 
+    </section>
+    
 <!-- Footer -->
 <footer class="section footer">
     <div class="col">
@@ -188,6 +126,17 @@
 
     <!-- indexjs -->
     <script src="js/index.js"></script>
-    
-</body>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" 
+        integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" 
+        crossorigin="anonymous">
+    </script>
+    <script src="./js/zoomsl.min.js"></script>  
+    <script>
+        $(function(){
+            $('#zoom').imagezoomsl({
+                zoomrange: [3, 3]
+            })
+        })
+    </script>
+    </body>
 </html>

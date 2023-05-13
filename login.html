@@ -25,7 +25,7 @@
         </div>
 
         <!-- Navigation -->
-        <div class="navigation">
+        <div class="navigation login">
             <div class="nav-center container d-flex">
                 <a href="" class="logo"><h1>.vektor</h1></a>
 
@@ -36,22 +36,23 @@
                     <li class="nav-item"><a href="blog.html" class="nav-link">BLOG</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">CONTACT</a></li>
                     <li class="icons d-flex">
-                    <a href="login.html" class="icon"><i class="bx bx-user"></i></a>
-                    <a class="icon"><i class="bx bx-heart"></i>
+                    <a href="login.html" class="icon active"><i class="bx bx-user"></i></a>
+                    <a href="wishlist.html" class="icon"><i class="bx bx-heart"></i>
                     <span class="d-flex">0</span>
                     </a>
-                    <a href="cart.html" class="icon active"><i class="bx bx-cart"></i>
+                    <a href="cart.html" class="icon"><i class="bx bx-cart"></i>
                         <span class="d-flex">0</span>
                     </a>
                     </li>
                 </ul>
+
                 <!-- icons -->
                 <div class="icons d-flex">
-                    <a href="login.html" class="icon"><i class="bx bx-user"></i></a>
+                    <a href="login.html" class="icon active"><i class="bx bx-user"></i></a>
                     <a href="wishlist.html" class="icon"><i class="bx bx-heart"></i>
                     <span class="d-flex">0</span>
                     </a>
-                    <a href="cart.html" class="icon active"><i class="bx bx-cart"></i>
+                    <a href="cart.html" class="icon"><i class="bx bx-cart"></i>
                         <span class="d-flex">0</span>
                     </a>
                 </div>
@@ -61,81 +62,69 @@
                 </div>
             </div>
         </div>
-    <!-- Page Header -->
-    <section class="page-header">
-        <h2>.shopping cart</h2>
-    </section>
-    <!-- Cart -->
-    <section class="container cart">
-        <table width="100%">
-            <thead>
-                <tr>
-                    <td>Image</td>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Subtotal</td>
-                    <td>Remove</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><img src="./images/product3.jpg" alt=""></td>
-                    <td>Represent Hoodie</td>
-                    <td>$99.00</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$99.00</td>
-                    <td><a href="#"><i class="bx bx-x"></i></a></td>
-                </tr>
-                <tr>
-                    <td><img src="./images/product6.jpg" alt=""></td>
-                    <td>Represent T-shirt</td>
-                    <td>$99.00</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$99.00</td>
-                    <td><a href="#"><i class="bx bx-x"></i></a></td>
-                </tr>
-                <tr>
-                    <td><img src="./images/product7.jpg" alt=""></td>
-                    <td>North Face Wool-Blend Down Jacket</td>
-                    <td>$99.00</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$99.00</td>
-                    <td><a href="#"><i class="bx bx-x"></i></a></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <!-- Payment -->
-    <section class="cart-payment">
-        <div class="coupon">
-            <h3>Apply Coupon</h3>
-            <div>
-                <input type="text" placeholder="Enter Your Coupon">
-                <button class="coupon-btn">Apply</button>
+   
+    <!-- About -->
+    <section class="login-section">
+        <div class="container" id="container">
+            <div class="form-container register-container">
+                <form action="#">
+                    <h1>Register Here</h1>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button>Register</button>
+                    <span>or use your account</span>
+                    <div class="social-container">
+                        <a href="#"><i class="bx bxl-facebook-square"></i></a>
+                        <a href="#"><i class="bx bxl-google"></i></a>
+                        <a href="#"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                </form>
+            </div>
+            <div class="form-container login-container">
+                <form action="#">
+                    <h1>Login Here</h1>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <div class="content">
+                        <div class="checkbox">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                            <small>Remember me</small>
+                        </div>
+                        <div class="pass-link">
+                            <a href="#">Forgot password</a>
+                        </div>
+                    </div>
+                    <button>Login</button>
+                    <span>or use your account</span>
+                    <div class="social-container">
+                        <a href="#"><i class="bx bxl-facebook-square"></i></a>
+                        <a href="#"><i class="bx bxl-google"></i></a>
+                        <a href="#"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1 class="title-login">Welcome <br>back</h1>
+                        <p>If you have an account, login here</p>
+                        <button class="ghost" id="login">Login
+                            <i class="bx bx-right-arrow-alt login"></i>
+                        </button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1 class="title-login">Start your <br>journey now</h1>
+                        <p>If you don't have an account, join us</p>
+                        <button class="ghost" id="register">Register
+                            <i class="bx bx-left-arrow-alt register"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="subtotal">
-            <h3>Cart Total</h3>
-            <table>
-                <tr>
-                    <td>Cart Subtotal</td>
-                    <td>$1230</td>
-                </tr>
-                <tr>
-                    <td>Shipping Cost</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong>$1230</strong></td>
-                </tr>
-            </table>
-            <button class="checkout-btn">Proceed to checkout</button>
-        </div>
     </section>
-
+    
 <!-- Footer -->
 <footer class="section footer">
     <div class="col">
@@ -188,6 +177,5 @@
 
     <!-- indexjs -->
     <script src="js/index.js"></script>
-    
-</body>
+    </body>
 </html>
