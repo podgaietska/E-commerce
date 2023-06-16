@@ -11,9 +11,14 @@
     --white: #fff;
     --black: #222;
     --grey: #6e6e6f;
-    -grey1: #f0f0f0;
-    --grey2: #eae8e8;
+    --grey1: #c6c6c6;
+    --grey2: #f2f2f2;
     --greytext: #a9a9a9;
+    --nude1: #E8E4DA;
+    --nude2: #DBD3C1;
+    --nude3: #CBBFA7;
+    --darkblue: #252E33;
+
 }
 
 html{
@@ -57,9 +62,12 @@ li{
 }
 
 .top-nav{
-    background: var(--grey);
+    background: var(--grey2);
+    border-bottom: 1px solid var(--grey1);
     font-size: 1.3rem;
-    color: var(--white);
+    color: var(black);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
 }
 
 .top-nav div{
@@ -69,7 +77,7 @@ li{
 
 .top-nav a{
     padding: 0 0.5rem;
-    color: var(--white);
+    color: var(--black);
 }
 
 /* Navigation */
@@ -432,23 +440,36 @@ li{
     padding: 6rem 0;
 }
 
-.title{
-    text-align: center;
+.new-arrival .info{
+    margin: 0 10rem;
+    text-align: flex-start;
     margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
 }
 
 .title h1{
     font-size: 3rem;
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
     font-weight: 500;
 }
 
-.title p{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
+.title small{
     font-size: 1.4rem;
     color: var(--greytext);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.info p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+    color: var(--greytext);
+    width: 50%;
 }
 
 .product-center{
@@ -1785,38 +1806,42 @@ footer .row{
   .login-section a:hover {
     color: #9a9a9a;
   }
-  
-  .content {
+
+
+  .options{
+    width: 100%;
     display: flex;
-    width: 100%;
-    height: 50px;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
   }
 
-    .checkbox small{
-    font-size: 10px;
-    margin-left: -120px;
-  }
-  .pass-link a{
-    font-size: 10px;
-  }
-  
-  .checkbox, .pass-link {
+  .options .checkbox{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 40%;
   }
-  
-  .content input {
+
+  .options .checkbox input{
     accent-color: #333;
     width: 12px;
     height: 12px;
-    margin-right: 0;
   }
-  
+
+  .options .checkbox small{
+    font-size: 12px;
+  }
+
+  .options .pass-link{
+    display: flex;
+    align-items: center;
+  }
+
+  .options .pass-link a{
+    font-size: 12px;
+  }
+
+
   
   .login-section button {
     position: relative;
@@ -2061,7 +2086,7 @@ footer .row{
 /* Cards */
 .card-section{
     display: flex;
-    min-height: 35rem;
+    min-height: 30rem;
     align-items: center;
     justify-content: center;
 }
@@ -2069,8 +2094,7 @@ footer .row{
 .card-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    width: 100%;
+    gap: 40px;
     width: 100%;
     justify-content: center;
 }
@@ -2078,7 +2102,7 @@ footer .row{
 .card{
     position: relative;
     list-style: none;
-    width: 250px;
+    width: 230px;
     transition: 0.3s ease;
 }
 
@@ -2095,10 +2119,9 @@ footer .row{
     right: 0;
     left: 0;
     top: 0;
-    border-radius: 20px;
     background-size: 450px;
     background-position: center;
-    filter: brightness(.9) saturate(1) contrast(1);
+    filter: brightness(.95) saturate(1) contrast(1);
     transform-origin: bottom;
     transform: scale(1) translateZ(0);
     transition: 0.3s ease;

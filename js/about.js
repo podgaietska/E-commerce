@@ -15,7 +15,6 @@ upButton.addEventListener('click', () => changeSlide('up'));
 downButton.addEventListener('click', () => changeSlide('down'));
 
 const changeSlide = (direction) => {
-    console.log(direction);
     const sliderHeight = sliderContainer.clientHeight;
     if(direction === 'up') {
         activeSlideIndex++;
